@@ -1,0 +1,631 @@
+
+*** Running vivado
+    with args -log main.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source main.tcl -notrace
+Command: synth_design -top main -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19360 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 362.121 ; gain = 101.277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:21]
+INFO: [Synth 8-3491] module 'freq_div' declared at 'C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/freq_div.vhd:6' bound to instance 'freq_divider' of component 'freq_div' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'freq_div' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/freq_div.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'freq_div' (1#1) [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/freq_div.vhd:14]
+INFO: [Synth 8-3491] module 'Read_module' declared at 'C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Read_module.vhd:5' bound to instance 'C0' of component 'Read_module' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'Read_module' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Read_module.vhd:17]
+INFO: [Synth 8-3491] module 'keypad' declared at 'C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/keypad.vhd:6' bound to instance 'C0' of component 'keypad' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Read_module.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'keypad' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/keypad.vhd:14]
+INFO: [Synth 8-3491] module 'Decoder' declared at 'C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Decoder.vhd:6' bound to instance 'C0' of component 'Decoder' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/keypad.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'Decoder' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Decoder.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Decoder' (2#1) [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Decoder.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'keypad' (3#1) [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/keypad.vhd:14]
+INFO: [Synth 8-3491] module 'REG_4bits' declared at 'C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/REG_4bits.vhd:7' bound to instance 'CARD' of component 'REG_4bits' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Read_module.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'REG_4bits' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/REG_4bits.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'REG_4bits' (4#1) [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/REG_4bits.vhd:15]
+INFO: [Synth 8-3491] module 'REG_4bits' declared at 'C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/REG_4bits.vhd:7' bound to instance 'PIN1' of component 'REG_4bits' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Read_module.vhd:48]
+INFO: [Synth 8-3491] module 'Shifting_REG' declared at 'C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Shifting_REG.vhd:5' bound to instance 'PIN2' of component 'Shifting_REG' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Read_module.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'Shifting_REG' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Shifting_REG.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Shifting_REG' (5#1) [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Shifting_REG.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Read_module' (6#1) [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Read_module.vhd:17]
+INFO: [Synth 8-3491] module 'CU' declared at 'C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/CU.vhd:7' bound to instance 'C1' of component 'CU' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'CU' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/CU.vhd:22]
+INFO: [Synth 8-226] default block is never used [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/CU.vhd:47]
+WARNING: [Synth 8-614] signal 'SEL_OP' is read in the process but is not in the sensitivity list [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/CU.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'CU' (7#1) [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/CU.vhd:22]
+INFO: [Synth 8-3491] module 'REG_Block' declared at 'C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/REG_Block.vhd:6' bound to instance 'C2' of component 'REG_Block' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'REG_Block' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/REG_Block.vhd:16]
+INFO: [Synth 8-3491] module 'DMUX_1_to_8' declared at 'C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/DMUX_1_to_8.vhd:7' bound to instance 'C0' of component 'DMUX_1_to_8' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/REG_Block.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'DMUX_1_to_8' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/DMUX_1_to_8.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'DMUX_1_to_8' (8#1) [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/DMUX_1_to_8.vhd:16]
+INFO: [Synth 8-3491] module 'REG_pin_money' declared at 'C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/REG_pin_money.vhd:6' bound to instance 'C1' of component 'REG_pin_money' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/REG_Block.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'REG_pin_money' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/REG_pin_money.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'REG_pin_money' (9#1) [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/REG_pin_money.vhd:14]
+INFO: [Synth 8-3491] module 'REG_pin_money' declared at 'C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/REG_pin_money.vhd:6' bound to instance 'C2' of component 'REG_pin_money' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/REG_Block.vhd:61]
+INFO: [Synth 8-3491] module 'REG_pin_money' declared at 'C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/REG_pin_money.vhd:6' bound to instance 'C3' of component 'REG_pin_money' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/REG_Block.vhd:62]
+INFO: [Synth 8-3491] module 'REG_pin_money' declared at 'C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/REG_pin_money.vhd:6' bound to instance 'C4' of component 'REG_pin_money' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/REG_Block.vhd:63]
+INFO: [Synth 8-3491] module 'MUX_8_to_1' declared at 'C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/MUX_8_to_1.vhd:6' bound to instance 'C5' of component 'MUX_8_to_1' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/REG_Block.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'MUX_8_to_1' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/MUX_8_to_1.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'MUX_8_to_1' (10#1) [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/MUX_8_to_1.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'REG_Block' (11#1) [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/REG_Block.vhd:16]
+INFO: [Synth 8-3491] module 'REG_pin_money' declared at 'C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/REG_pin_money.vhd:6' bound to instance 'C3' of component 'REG_pin_money' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:126]
+INFO: [Synth 8-3491] module 'comparatorBCD' declared at 'C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/comparatorBCD.vhd:5' bound to instance 'C4' of component 'comparatorBCD' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'comparatorBCD' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/comparatorBCD.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'comparatorBCD' (12#1) [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/comparatorBCD.vhd:12]
+INFO: [Synth 8-3491] module 'Display_Unit' declared at 'C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Display_Unit.vhd:7' bound to instance 'C5' of component 'Display_Unit' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'Display_Unit' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Display_Unit.vhd:17]
+INFO: [Synth 8-3491] module 'MUX_Display_controller' declared at 'C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/MUX_Display_controller.vhd:5' bound to instance 'C0' of component 'MUX_Display_controller' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Display_Unit.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'MUX_Display_controller' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/MUX_Display_controller.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'MUX_Display_controller' (13#1) [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/MUX_Display_controller.vhd:13]
+WARNING: [Synth 8-5640] Port 'reset' is missing in component declaration [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Display_Unit.vhd:26]
+INFO: [Synth 8-3491] module 'Display_controller' declared at 'C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Display_controller.vhd:6' bound to instance 'C1' of component 'Display_controller' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Display_Unit.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'Display_controller' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Display_controller.vhd:18]
+INFO: [Synth 8-226] default block is never used [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Display_controller.vhd:55]
+WARNING: [Synth 8-614] signal 'BCD_IN' is read in the process but is not in the sensitivity list [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Display_controller.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'Display_controller' (14#1) [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Display_controller.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Display_Unit' (15#1) [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Display_Unit.vhd:17]
+WARNING: [Synth 8-3848] Net block_in in module/entity main does not have driver. [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-256] done synthesizing module 'main' (16#1) [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 418.500 ; gain = 157.656
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin C1:RESET to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/Display_Unit.vhd:39]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[31] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[30] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[29] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[28] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[27] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[26] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[25] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[24] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[23] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[22] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[21] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[20] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[19] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[18] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[17] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[16] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[15] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[14] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[13] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[12] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[11] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[10] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[9] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[8] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[7] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[6] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[5] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[4] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[3] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[2] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[1] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C2:DATA_in[0] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:125]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT0[15] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT0[14] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT0[13] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT0[12] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT0[11] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT0[10] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT0[9] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT0[8] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT0[7] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT0[6] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT0[5] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT0[4] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT2[15] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT2[14] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT2[13] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT2[12] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT2[11] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT2[10] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT2[9] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT2[8] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT2[7] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT2[6] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT2[5] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT2[4] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT2[3] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+WARNING: [Synth 8-3295] tying undriven pin C5:INPUT2[2] to constant 0 [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/main.vhd:134]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 418.500 ; gain = 157.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 418.500 ; gain = 157.656
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/barai/Desktop/Learning/Digital System Design/basys3_config.xdc]
+Finished Parsing XDC File [C:/Users/barai/Desktop/Learning/Digital System Design/basys3_config.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/barai/Desktop/Learning/Digital System Design/basys3_config.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 749.207 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 749.207 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 749.207 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 749.207 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 749.207 ; gain = 488.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 749.207 ; gain = 488.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 749.207 ; gain = 488.363
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "DecodeOut" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'CU'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "idle_led" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "aici" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Display_controller_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LD_REG_block" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LD_REG_sum" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LD_mem_pin" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/CU.vhd:32]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/CU.vhd:32]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+                 read_uc |                             0001 |                             0001
+                read_thp |                             0010 |                             0010
+                 read_hp |                             0011 |                             0011
+                 read_tp |                             0100 |                             0100
+                 read_up |                             0101 |                             0101
+              verify_pin |                             0110 |                             0110
+               sel_trans |                             0111 |                             0111
+                    sold |                             1000 |                             1000
+                 deposit |                             1001 |                             1001
+                 extract |                             1010 |                             1010
+                read_thn |                             1011 |                             1100
+                 read_hn |                             1100 |                             1101
+                 read_tn |                             1101 |                             1110
+                 read_un |                             1110 |                             1111
+              change_pin |                             1111 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'CU'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.srcs/sources_1/new/CU.vhd:32]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 749.207 ; gain = 488.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 10    
+	               12 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 8     
+	   2 Input     32 Bit        Muxes := 20    
+	   4 Input      4 Bit        Muxes := 7     
+	   2 Input      4 Bit        Muxes := 31    
+	  11 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 2     
+	  16 Input      4 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	  16 Input      1 Bit        Muxes := 13    
+	   4 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Decoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 8     
+	  11 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module REG_4bits 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 4     
+Module Shifting_REG 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+Module CU 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 15    
+	   4 Input      4 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 13    
+Module DMUX_1_to_8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 8     
+Module REG_pin_money 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+Module REG_Block 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 4     
+Module Display_controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[0]' (FDPE) to 'C2/C4/reg_data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[0]' (FDPE) to 'C2/C3/reg_data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[0]' (FDPE) to 'C2/C2/reg_data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[0]' (FDPE) to 'C2/C1/reg_data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[1]' (FDCE) to 'C2/C4/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[1]' (FDCE) to 'C2/C3/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[1]' (FDCE) to 'C2/C2/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[1]' (FDCE) to 'C2/C1/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[2]' (FDCE) to 'C2/C4/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[2]' (FDCE) to 'C2/C3/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[2]' (FDCE) to 'C2/C2/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[2]' (FDCE) to 'C2/C1/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[3]' (FDCE) to 'C2/C4/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[3]' (FDCE) to 'C2/C3/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[3]' (FDCE) to 'C2/C2/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[3]' (FDCE) to 'C2/C1/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[8]' (FDCE) to 'C2/C4/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[8]' (FDCE) to 'C2/C3/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[8]' (FDCE) to 'C2/C2/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[8]' (FDCE) to 'C2/C1/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[9]' (FDCE) to 'C2/C4/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[9]' (FDCE) to 'C2/C3/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[9]' (FDCE) to 'C2/C2/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[9]' (FDCE) to 'C2/C1/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[10]' (FDCE) to 'C2/C4/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[10]' (FDCE) to 'C2/C3/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[10]' (FDCE) to 'C2/C2/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[10]' (FDCE) to 'C2/C1/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[11]' (FDCE) to 'C2/C4/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[11]' (FDCE) to 'C2/C3/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[11]' (FDCE) to 'C2/C2/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[11]' (FDCE) to 'C2/C1/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[4]' (FDPE) to 'C2/C4/reg_data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[4]' (FDPE) to 'C2/C3/reg_data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[4]' (FDPE) to 'C2/C2/reg_data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[4]' (FDPE) to 'C2/C1/reg_data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[6]' (FDCE) to 'C2/C4/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[6]' (FDCE) to 'C2/C3/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[6]' (FDCE) to 'C2/C2/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[6]' (FDCE) to 'C2/C1/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[5]' (FDCE) to 'C2/C4/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[5]' (FDCE) to 'C2/C3/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[5]' (FDCE) to 'C2/C2/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[5]' (FDCE) to 'C2/C1/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[7]' (FDCE) to 'C2/C4/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[7]' (FDCE) to 'C2/C3/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[7]' (FDCE) to 'C2/C2/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[7]' (FDCE) to 'C2/C1/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[12]' (FDCE) to 'C2/C4/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[12]' (FDCE) to 'C2/C3/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[12]' (FDCE) to 'C2/C2/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[12]' (FDCE) to 'C2/C1/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[13]' (FDCE) to 'C2/C4/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[13]' (FDCE) to 'C2/C3/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[13]' (FDCE) to 'C2/C2/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[13]' (FDCE) to 'C2/C1/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[14]' (FDCE) to 'C2/C4/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[14]' (FDCE) to 'C2/C3/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[14]' (FDCE) to 'C2/C2/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[14]' (FDCE) to 'C2/C1/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[15]' (FDCE) to 'C2/C4/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[15]' (FDCE) to 'C2/C3/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[15]' (FDCE) to 'C2/C2/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[15]' (FDCE) to 'C2/C1/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[28]' (FDPE) to 'C2/C4/reg_data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[28]' (FDPE) to 'C2/C3/reg_data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[28]' (FDPE) to 'C2/C2/reg_data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[28]' (FDPE) to 'C2/C1/reg_data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[24]' (FDCE) to 'C2/C4/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[24]' (FDCE) to 'C2/C3/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[24]' (FDCE) to 'C2/C2/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[24]' (FDCE) to 'C2/C1/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[20]' (FDPE) to 'C2/C4/reg_data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[20]' (FDPE) to 'C2/C3/reg_data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[20]' (FDPE) to 'C2/C2/reg_data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[20]' (FDPE) to 'C2/C1/reg_data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[16]' (FDCE) to 'C2/C4/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[16]' (FDCE) to 'C2/C3/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[16]' (FDCE) to 'C2/C2/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[16]' (FDCE) to 'C2/C1/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[29]' (FDCE) to 'C2/C4/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[29]' (FDCE) to 'C2/C3/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[29]' (FDCE) to 'C2/C2/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[29]' (FDCE) to 'C2/C1/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[25]' (FDPE) to 'C2/C4/reg_data_reg[21]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[25]' (FDPE) to 'C2/C3/reg_data_reg[21]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[25]' (FDPE) to 'C2/C2/reg_data_reg[21]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[25]' (FDPE) to 'C2/C1/reg_data_reg[21]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[21]' (FDPE) to 'C2/C4/reg_data_reg[18]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[21]' (FDPE) to 'C2/C3/reg_data_reg[18]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[21]' (FDPE) to 'C2/C2/reg_data_reg[18]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[21]' (FDPE) to 'C2/C1/reg_data_reg[18]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[17]' (FDCE) to 'C2/C4/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[17]' (FDCE) to 'C2/C3/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[17]' (FDCE) to 'C2/C2/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[17]' (FDCE) to 'C2/C1/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C4/reg_data_reg[30]' (FDCE) to 'C2/C4/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C3/reg_data_reg[30]' (FDCE) to 'C2/C3/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C2/reg_data_reg[30]' (FDCE) to 'C2/C2/reg_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'C2/C1/reg_data_reg[30]' (FDCE) to 'C2/C1/reg_data_reg[31]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\C2/C4/reg_data_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\C2/C3/reg_data_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\C2/C2/reg_data_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\C2/C1/reg_data_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\C3/reg_data_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\C2/C4/O_reg[18]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\C2/C3/O_reg[18]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\C2/C2/O_reg[18]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\C2/C1/O_reg[18]_C )
+WARNING: [Synth 8-3332] Sequential element (C2/C1/O_reg[18]_C) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (C2/C2/O_reg[18]_C) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (C2/C3/O_reg[18]_C) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (C2/C4/O_reg[18]_C) is unused and will be removed from module main.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 749.207 ; gain = 488.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 749.207 ; gain = 488.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 749.207 ; gain = 488.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 757.750 ; gain = 496.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 757.750 ; gain = 496.906
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 757.750 ; gain = 496.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 757.750 ; gain = 496.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 757.750 ; gain = 496.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 757.750 ; gain = 496.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 757.750 ; gain = 496.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    37|
+|3     |LUT1   |    11|
+|4     |LUT2   |    28|
+|5     |LUT3   |    34|
+|6     |LUT4   |    37|
+|7     |LUT5   |    35|
+|8     |LUT6   |    79|
+|9     |FDCE   |    12|
+|10    |FDPE   |    36|
+|11    |FDRE   |    75|
+|12    |LD     |     4|
+|13    |LDC    |    12|
+|14    |IBUF   |    10|
+|15    |OBUF   |    19|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------+-------------------+------+
+|      |Instance       |Module             |Cells |
++------+---------------+-------------------+------+
+|1     |top            |                   |   431|
+|2     |  C0           |Read_module        |   222|
+|3     |    C0         |keypad             |   121|
+|4     |      C0       |Decoder            |   121|
+|5     |    CARD       |REG_4bits          |    36|
+|6     |    PIN1       |REG_4bits_4        |    28|
+|7     |    PIN2       |Shifting_REG       |    37|
+|8     |  C1           |CU                 |    61|
+|9     |  C2           |REG_Block          |    14|
+|10    |    C1         |REG_pin_money_0    |     3|
+|11    |    C2         |REG_pin_money_1    |     4|
+|12    |    C3         |REG_pin_money_2    |     3|
+|13    |    C4         |REG_pin_money_3    |     4|
+|14    |  C3           |REG_pin_money      |     5|
+|15    |  C4           |comparatorBCD      |    29|
+|16    |  C5           |Display_Unit       |    34|
+|17    |    C1         |Display_controller |    34|
+|18    |  freq_divider |freq_div           |    35|
++------+---------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 757.750 ; gain = 496.906
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 757.750 ; gain = 166.199
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 757.750 ; gain = 496.906
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 53 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 765.156 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  LD => LDCE: 4 instances
+  LDC => LDCE: 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+200 Infos, 70 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 765.156 ; gain = 514.402
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 765.156 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/barai/Desktop/Learning/Digital System Design/Project/atm/atm.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 17 08:42:37 2023...

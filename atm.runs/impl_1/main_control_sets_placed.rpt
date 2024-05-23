@@ -1,0 +1,106 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed May 17 08:43:18 2023
+| Host         : PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    39 |
+| Unused register locations in slices containing registers |   237 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           32 |
+|      4 |            2 |
+|      7 |            1 |
+|    16+ |            4 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              28 |           11 |
+| No           | No                    | Yes                    |              32 |           28 |
+| No           | Yes                   | No                     |              59 |           24 |
+| Yes          | No                    | No                     |               4 |            1 |
+| Yes          | No                    | Yes                    |              16 |            4 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------+-------------------------+---------------------------------------+------------------+----------------+
+|                 Clock Signal                 |      Enable Signal      |            Set/Reset Signal           | Slice Load Count | Bel Load Count |
++----------------------------------------------+-------------------------+---------------------------------------+------------------+----------------+
+|  new_clock_out_OBUF_BUFG                     |                         | C1/reg_data_reg[2]_0                  |                1 |              1 |
+|  C1/reg_data_reg[0]_1                        |                         | C1/FSM_sequential_curr_state_reg[3]_1 |                1 |              1 |
+|  C0/CARD/O_reg[0]_C_0                        |                         | C0/CARD/reg_data_reg[18]_0            |                1 |              1 |
+|  clk_IBUF_BUFG                               |                         | C1/FSM_sequential_curr_state_reg[1]_0 |                1 |              1 |
+|  clk_IBUF_BUFG                               |                         | C1/reg_data_reg[18]                   |                1 |              1 |
+|  clk_IBUF_BUFG                               |                         | C0/CARD/O_reg[0]_C_0                  |                1 |              1 |
+|  clk_IBUF_BUFG                               |                         | C0/CARD/O_reg[0]_C_3                  |                1 |              1 |
+|  clk_IBUF_BUFG                               |                         | C0/CARD/O_reg[0]_C_1                  |                1 |              1 |
+|  clk_IBUF_BUFG                               |                         | C0/CARD/O_reg[0]_C_2                  |                1 |              1 |
+|  C0/CARD/O_reg[0]_C_3                        |                         | C0/CARD/reg_data_reg[18]_6            |                1 |              1 |
+|  C0/CARD/O_reg[0]_C_1                        |                         | C0/CARD/reg_data_reg[18]_2            |                1 |              1 |
+|  new_clock_out_OBUF_BUFG                     |                         | C1/FSM_sequential_curr_state_reg[3]_4 |                1 |              1 |
+|  new_clock_out_OBUF_BUFG                     |                         | C1/FSM_sequential_curr_state_reg[3]_3 |                1 |              1 |
+|  new_clock_out_OBUF_BUFG                     |                         | C1/FSM_sequential_curr_state_reg[3]_1 |                1 |              1 |
+|  new_clock_out_OBUF_BUFG                     |                         | C1/reg_data_reg[0]                    |                1 |              1 |
+|  new_clock_out_OBUF_BUFG                     |                         | C1/FSM_sequential_curr_state_reg[3]_2 |                1 |              1 |
+|  new_clock_out_OBUF_BUFG                     |                         | C1/reg_data_reg[3]                    |                1 |              1 |
+|  new_clock_out_OBUF_BUFG                     |                         | C1/reg_data_reg[1]                    |                1 |              1 |
+|  new_clock_out_OBUF_BUFG                     |                         | C1/reg_data_reg[1]_0                  |                1 |              1 |
+|  C0/CARD/O_reg[0]_C_2                        |                         | C0/CARD/reg_data_reg[18]_4            |                1 |              1 |
+|  new_clock_out_OBUF_BUFG                     |                         | C1/reg_data_reg[2]_1                  |                1 |              1 |
+|  new_clock_out_OBUF_BUFG                     |                         | C1/reg_data_reg[1]_1                  |                1 |              1 |
+|  new_clock_out_OBUF_BUFG                     |                         | C1/reg_data_reg[2]                    |                1 |              1 |
+|  new_clock_out_OBUF_BUFG                     |                         | C1/reg_data_reg[0]_0                  |                1 |              1 |
+|  new_clock_out_OBUF_BUFG                     |                         | C1/reg_data_reg[0]_1                  |                1 |              1 |
+|  C1/FSM_sequential_curr_state_reg[1]_0       |                         | C1/reg_data_reg[18]                   |                1 |              1 |
+|  C1/reg_data_reg[0]                          |                         | C1/reg_data_reg[0]_0                  |                1 |              1 |
+|  C1/reg_data_reg[3]                          |                         | C1/FSM_sequential_curr_state_reg[3]_4 |                1 |              1 |
+|  C1/reg_data_reg[1]                          |                         | C1/reg_data_reg[1]_0                  |                1 |              1 |
+|  C1/reg_data_reg[2]_1                        |                         | C1/FSM_sequential_curr_state_reg[3]_3 |                1 |              1 |
+|  C1/reg_data_reg[1]_1                        |                         | C1/FSM_sequential_curr_state_reg[3]_2 |                1 |              1 |
+|  C1/reg_data_reg[2]                          |                         | C1/reg_data_reg[2]_0                  |                1 |              1 |
+|  clk_IBUF_BUFG                               | C0/C0/C0/Col[3]_i_1_n_0 |                                       |                1 |              4 |
+|  C1/FSM_sequential_next_state_reg[3]_i_2_n_0 |                         |                                       |                2 |              4 |
+|  new_clock_out_OBUF_BUFG                     |                         | RESET_BUT_IBUF                        |                4 |              7 |
+|  new_clock_out_OBUF_BUFG                     | C1/E[0]                 | RESET_BUT_IBUF                        |                4 |             16 |
+|  clk_IBUF_BUFG                               |                         | C0/C0/C0/sclk                         |                5 |             20 |
+|  clk_IBUF_BUFG                               |                         |                                       |                9 |             24 |
+|  clk_IBUF_BUFG                               |                         | RESET_BUT_IBUF                        |               11 |             32 |
++----------------------------------------------+-------------------------+---------------------------------------+------------------+----------------+
+
+
